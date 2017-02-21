@@ -47,7 +47,7 @@
             this.gbConfig = new System.Windows.Forms.GroupBox();
             this.txtTo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkRepo = new System.Windows.Forms.LinkLabel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.linkClear = new System.Windows.Forms.LinkLabel();
@@ -248,15 +248,16 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "To:";
             // 
-            // linkLabel1
+            // linkRepo
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(483, 340);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(221, 13);
-            this.linkLabel1.TabIndex = 11;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "https://github.com/weinerso/simple-smtp-test";
+            this.linkRepo.AutoSize = true;
+            this.linkRepo.Location = new System.Drawing.Point(483, 340);
+            this.linkRepo.Name = "linkRepo";
+            this.linkRepo.Size = new System.Drawing.Size(221, 13);
+            this.linkRepo.TabIndex = 11;
+            this.linkRepo.TabStop = true;
+            this.linkRepo.Text = "https://github.com/weinerso/simple-smtp-test";
+            this.linkRepo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRepo_LinkClicked);
             // 
             // label9
             // 
@@ -324,7 +325,7 @@
             this.Controls.Add(this.linkClear);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkRepo);
             this.Controls.Add(this.gbConfig);
             this.Controls.Add(this.btnTest);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -363,7 +364,7 @@
         private System.Windows.Forms.GroupBox gbConfig;
         private System.Windows.Forms.TextBox txtTo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkRepo;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.LinkLabel linkClear;

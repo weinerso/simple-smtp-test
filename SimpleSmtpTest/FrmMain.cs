@@ -19,6 +19,7 @@ namespace SimpleSmtpTest
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            linkRepo.Links.Add(0, 44, linkRepo.Text);
             Log("Ready.");
         }
 
@@ -98,6 +99,11 @@ namespace SimpleSmtpTest
         {
             rtxtOutput.SelectionStart = rtxtOutput.Text.Length;
             rtxtOutput.ScrollToCaret();
+        }
+
+        private void linkRepo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Link.LinkData.ToString());
         }
     }
 }
