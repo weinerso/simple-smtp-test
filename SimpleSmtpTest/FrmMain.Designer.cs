@@ -290,6 +290,7 @@
             // pbar
             // 
             this.pbar.Location = new System.Drawing.Point(13, 337);
+            this.pbar.MarqueeAnimationSpeed = 25;
             this.pbar.Name = "pbar";
             this.pbar.Size = new System.Drawing.Size(283, 16);
             this.pbar.TabIndex = 24;
